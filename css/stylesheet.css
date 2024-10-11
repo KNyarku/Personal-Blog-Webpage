@@ -1,0 +1,633 @@
+@import url('navbar.css');
+@import url('Slider.css');
+
+@font-face {
+    font-family: "Space Grotesk", sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    
+    
+}
+
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 20x;
+    color: hsl(244, 38%, 26%);
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.space-grotesk{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:lighter
+    
+  }
+  
+  a{
+    color: hsl(263, 44%, 20%);
+}
+
+
+li{
+    font-size: 20px;
+    align-items: center;
+    font-weight:lighter; 
+    
+}
+img{
+    max-width: 100vw;
+    max-height: 30vh;
+    float: center;
+    border: 2.5px hidden #58466657;
+    border-radius: 10px;
+    
+
+    /*margin-right: 15px;*/
+        /*justify-content: center;*/
+    
+
+}
+.avatarBox
+{
+    img{
+     
+        display: flexbox;
+        justify-content: center;
+        float: center;
+        border: 2px solid #918F9C;
+        max-width: 35%;
+        /*margin-right: 15px;*/
+        /*justify-content: center;*/
+        
+    
+    }
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+button{
+    flex:auto;
+    flex-direction: rows;
+    border-radius: 5px;
+    align-self: left;
+    height: 70%;
+    width: 60%;
+    max-height: 5vh;
+    max-width: 12vw;
+    min-height: none;
+    min-width: 25%;
+    justify-content: left;
+    align-content: left;
+    text-align: center;
+    border: 2.5px solid #918F9C;
+    padding: 0%;
+    margin: 1%;
+}
+
+.my-div{
+    text-align: center;
+}
+
+.header {
+    
+    grid-area: hd;
+    text-align: center;
+    color: #403e47;
+    
+
+}
+
+.footer {
+
+    flex:auto;
+    flex-direction: rows;
+    border: solid 2px ;
+    padding-top: 1%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    grid-template-areas:
+    "ft ft ft ft ft ft ft";
+
+}
+
+
+    
+
+
+.box{
+    
+    border: 1px hidden #918F9C;
+    box-shadow: 100px, 100px;
+    
+
+    
+}
+
+body{
+
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(  #020218, #817d99, #020218, #000028 75%, #df4768);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    color: #fffff8;
+    font-size: 18px;
+    
+}
+.wrapper{
+    margin: 1vh auto;
+    width: 100% ;
+}
+
+.textBox{
+    
+    
+    justify-content: center;
+    display: grid;
+    width: auto;
+    height: auto;
+    padding: 3%;
+/*    border-radius: 10px;*/
+    color: #918F9C;
+    outline: none;
+    text-align: center;    
+    border: 2px transparent rgb(58,44, 44);
+    
+}
+
+
+
+.content {
+    padding-top: 5%;
+    grid-area: main;
+    display: flexbox;
+    border: 2.5px solid #918F9C;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    grid-template-areas:
+    "hd"
+    "sd "
+    "main"
+    "ft";
+    text-align: center;
+}
+
+section{
+    
+    border: 2px transparent #9900ff;
+    border-width: auto;
+    border-radius: 5em;
+    border-radius: auto;
+    height:86%;
+    width: 42%;
+    justify-self: center;
+    justify-content: center;
+
+
+
+
+
+}
+.container{
+
+    display: grid;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding: 1%;
+    max-width: 100%;
+    background-color: #44425379; 
+    border: 2.5px solid #928cb8;
+    float: right;
+    text-align: center;  
+    grid-template-areas:
+    "hd "
+    "sd"
+    "main"
+    "ft";
+    
+
+}
+
+
+.container2{
+    /*Adding padding around slider*/
+    padding: 2rem;
+}
+
+/*Slider properties*/
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    /*image-resolution:calc(auto);*/
+    overflow-x: hidden ;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+
+}
+
+
+/*Holds all images in the slider*/
+
+
+#nestedGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 30% 30% 30%;
+    border: 3px  solid rgb(46, 27, 27);
+    justify-content: center;
+    }
+
+
+.photoBox{
+    
+    /*width: 75px;*/
+    /*height: 250px;*/    
+    width: auto;
+    height: auto;
+    content: contain;
+    border: 1px hidden #918F9C;
+    justify-content: center;
+
+    
+}
+#one{    
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: right;
+    text-align: right;
+    
+    
+}
+#two{
+    text-align: center;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    border: 2px transparent #5b5ba757;
+    border-radius: 2%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    
+    
+
+}
+#three{
+   flex: auto;
+   flex-direction: row;
+    background-image: url('assets/BF\ TCG\ -\ Outlandish\ Jones.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+#four{
+    flex: auto;
+    flex-direction: row;
+    background-image: url(assets/BF\ TCG\ -\ Jordan\ Bloom.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-template-areas:
+    "hd "
+    "sd"
+    "main"
+    "ft";
+
+}
+#five{
+    flex: auto;
+    flex-direction: row;
+    background-image: url('assets/BF\ TCG\ -\ Woozie.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-template-areas:
+    "hd "
+    "sd"
+    "main"
+    "ft";
+
+}
+ul{
+    font-size: 95%;
+}
+@media(max-width:320px)
+{
+    
+    .nav-bar li{
+        float : center;
+        text-justify: center;
+        margin: 1%;
+        height: 5vh;
+     }
+    
+    body{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+        min-height: 10vh;
+        color: #fffff8;
+        font-size: 18px;
+        
+    }
+    
+    button{
+        flex:auto;
+        flex-direction: rows;
+        border-radius: 5px;
+        align-self: left;
+        height: 91%;
+        width: 25%;
+        max-height: 5vh;
+        max-width: 30%;
+        min-height: none;
+        min-width: 25%;
+        justify-content: left;
+        align-content: left;
+        text-align: center;
+    
+        border: 2.5px solid #918F9C;
+        padding: 0%;
+        margin: 2.5%;
+    }
+    ul{
+        font-size: 13.5px;
+        
+    }
+    .content{
+        margin-top: 5%;
+   
+    }
+    .container{
+
+    object-fit: contain;
+    display: flexbox;
+    margin-top: auto;
+    margin-bottom: 15%;
+    border: 5px transparent aquamarine;
+    justify-self: center;
+    padding: 0%;
+    padding-right: 0%;
+    padding-bottom: 10%;
+    max-width: fit-content;
+    }
+   
+    .button-three{
+        font-size: 65px;
+        margin: 4%;
+    }
+    img{
+        max-width:85vw;
+        max-height: fit-content;
+        
+
+    }
+    .wrapper{
+        margin: 10vw auto;
+        
+    }
+    
+    .slider-wrapper{
+        overflow: hidden;
+        max-width: 85vw;
+    }
+    .footer{
+        padding: 15%;
+        align-items: center;
+    }
+
+}
+@media(min-width: 321px) and (max-width:445px){
+    .container{
+        padding: 0%;
+        margin-bottom: 5%;
+        border:2px solid green ;
+    }
+    .nav-bar li{
+        padding-right: 0%;
+        padding-left: 15%;
+    }
+    .nav-bar{
+        padding: auto ;
+        padding-right: 0%
+        
+    }
+    
+}
+@media(min-width: 446px) and (max-width:599px){
+    .container{
+        padding: 0%;
+        margin-bottom: 5%;
+        border:5px solid black ;
+    }
+    .nav-bar li{
+        padding-right: 0%;
+        padding-left: 5.5%;
+    }
+    .nav-bar{
+        padding: auto ;
+        padding-right: 0%
+        
+    }
+    
+}
+@media(min-width:600px) and (max-width:900px){
+
+    body{
+
+    
+        display: flex;
+        width: 85vw;
+        margin: 6%;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        
+        
+    }
+    .nav-bar {
+        padding-right: auto;
+        padding-left: auto;
+    }
+    .nav-bar li{
+
+        
+        margin: 0.5%;
+        margin-right: 2.0%;
+        margin-left: 1.45%;
+
+        float: left;
+        padding-right: 0.25%;
+        padding-left: 5%;
+
+    
+    }
+    .container{
+        padding: 0%;
+        width: auto;
+        height: auto;
+        margin: 2.5%;
+        justify-self: center;
+        border-radius: auto;
+        border-style:groove;
+        border: 2px transparent #9900ff;
+        box-shadow: 100% rgb(51, 31, 70);
+        
+    }
+
+
+    .content {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        
+     
+        
+    }
+    slider-wrapper{
+        content: fill;
+        max-width: 20%;
+
+    }
+    img{
+        
+        justify-items: center;
+        align-items: center;
+        
+        
+    }
+}
+@media(min-width:901px) 
+{
+    justify-content center
+    justify-items center
+    align-items center
+
+    body{
+        display: flexbox;
+        width: 80vw;
+        margin: 5%;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .container{
+
+
+        padding: 0%;
+        width: 80vw;
+        height: auto;
+        margin: 2.5%;
+        border: 5px transparent yellow;
+        justify-self: center;
+        border-radius: auto;
+        border-style:groove;
+        justify-content: center;  
+    }
+    
+    .nav-bar li{
+
+        float: center;
+        margin: 1%;
+        padding-left: 7.75%;
+
+    
+    }
+    .nav-bar{
+        width: 100%;
+    }
+}
+@media(min-width:1101px){
+    justify-content center
+    justify-items center
+    align-items center
+    
+    .header{
+        padding-top: 95vh;
+        margin-top: 15%;
+
+
+    }
+    content{
+        max-height: content;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        
+    }
+   
+
+    body{
+        
+        display: flexbox;
+        width: 80vw;
+        /*margin: 25%;*/
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        max-width: 85%;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        
+       
+    }
+    .container{
+        width: auto;
+        height: auto;
+        margin: 2.5%;
+        padding: 1%;
+        border: 5px transparent blue;
+        justify-self: center;
+        border-radius: auto;
+        border-style:groove;
+        justify-content: center;        
+    }
+
+    .img{
+        margin-top: auto;
+        max-width: 500px;
+    }
+    
+    .nav-bar li{
+    margin: 0.05%;
+    margin-right: -2.45%;
+    float: left;
+    padding-right: 6.50%;
+    padding-left: 8.75%;
+
+}
+.nav-bar{
+    width: 79.25vw;
+    
+}
+}
