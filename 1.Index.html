@@ -1,86 +1,264 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8"/>
         <title>Home Page</title>
         <meta
-        content="width=device-width, initial-scale=1, maximum-scale=1"
+        content="width=device-width, initial-scale=1"
         name ="viewport"
         />
         
             
-        <link rel = "stylesheet" href="stylesheet.css">
+        <link rel = "stylesheet" href="/Personal Blog Project/css/stylesheet.css">
+        <link rel = "Home Page" href="/Personal Blog Project/css/home-page.css">
+        <script src="https://kit.fontawesome.com/d4c586947b.js" crossorigin="anonymous"></script>
+        
 
     </head>
     <body>
-        <div class = "container box">
-            <div class="avatarBox">
-                <img src="assets/Logo - Web Icon (1).png" alt="Black Forces Chronicles Web Blog">
-            </div>
-            
-            <nav class="sidebar">
-                <ul>
-                
-                <li><a href="1.Index.html">Home</a></li>   
-                <li><a href ="2.BlogPost.html">Latest Post</a></li>
-                <li><a href="5.About.html">About</a></li>
-                <li><a href="6.Subscribe.html">Subscribe</a></li>
-                
-            </ul>
-            <br>
-            </nav>
 
-            
-            <div class = "container box" id="two">
-                <div class="header box">
-                <h2><a href="2.BlogPost.html">Artomatic 2024</h2></a>
-                    <div class="wrapper">
-                     <img src="assets/P1070742.JPG">
-                        <div class = "textBox">
-                        On April 20th, 2024 Black Forces and DJ Woozie performed at Artomatic DC for  
-                        the very first time. We perfomed some classics and previewed new tracks 
-                        currently in progress to a brand new audience...
-                        </div> 
-                    </div>
-           
-           </div>
-           
-           
-            </div>
-            <div class="container box" id="two">
-            <div class="header box">    
-                <div class="wrapper">
-                <h2><a href ="3.BlogPost 2.html">Black Forces Trading Cards</h2></a>
-                <br>
-                <img src="assets/1st Batch.JPG">
-                <br><div class="textBox">
-                    Watch out Pokemon, Yu-Gi-Oh and Magic!
-                    <br> Black Forces are hard at work on brand new, hand drawn collectible trading cards. 
-                    Each card represents members of Black Forces, as well as collaborators. Future batches 
-                    will include items representing coveted possesions of said artists as well as fun bonuses... 
+        <main>
+            <div class = "container box">
+                <div class="avatarBox">
+                    <img src="assets/Logo - Web Icon (1).png" alt="Black Forces Chronicles Web Blog">
                 </div>
                 
-            </div>
-            </div>
-        </div>
-                  
-            <div class="container box" id="two">
-                <div class="header box">    
-                    <h2><a href="4.BlogPost3.html">Studio Day</h2></a>
-                    <br>
-                    <img src="assets/Studio Day1.JPG">
-                    <br><div class="textBox">
-                        Black Forces has been hard at work on new music! 
-                        <br>Check out these behind the scenes photos of our latest studio session, new behind the scenes 
-                        content is coming soon!
-                        <br> 
+                <nav class="nav-bar">
+                    <ul>
+                    
+                    <li><a href="1.Index.html">Home</a></li>   
+                    <li><a href ="pages/2.BlogPost.html">Latest Post</a></li>
+                    <li><a href="pages/5.About.html">About</a></li>
+                    <li><a href="pages/6.Subscribe.html">Subscribe</a></li>
+                    
+
+
+                </ul>
+                </nav>
+
+                
+                <div class = "card-container">
+
+                    <div class="card">
+
+                    <div class = "card-content">
+                    <div class = slider-wrapper>
+                
+
+                        <h3>Artomatic 2024</h3>
+                        <div class ="slider">
+                            <img id="slide-1" src="assets/P1070742.JPG" alt ="Front Side of building with 'Artomatic' in Red"></img>
+                            <img id="slide-2" src="assets/Artomatic Stage Photos 2.png" alt ="Artist Freestyles during mic check"></img>
+                            <img id="slide-3" src="assets/Artomatic Stage Photos 3.png" alt ="Rapper Jordan Bloom controls the mic"></img>
+                            <img id="slide-4" src="assets/Artomatic Stage Photos 4.png" alt ="Rapper Jordan Bloom motions with his hands as he raps"></img>
+                            <img id="slide-5" src="assets/Artomatic Stage Photos 14.png" alt="One gentleman begins to rap while the other dances"></img>
+
+                        </div>
+                            <div class="slider-nav">
+                            <a href="#slide-1" aria-label="Artomatic"></a>
+                            <a href="#slide-2" aria-label="The Crew on stage"></a>
+                            <a href="#slide-3" aria-label="Jordan Bloom rap extraordinaire"></a>
+                            <a href="#slide-4" aria-label="Shots of Jordan Bloom rapping"></a>
+                            <a href="#slide-5" aria-label="We all had a good time on that stage!"></a>
+            
+                            </div>
                             
+
+                            
+                           
                     </div>
                     
-                </div>
-                </div>
-              <div class="footer box"></div>
-  </div>
+                
+                    <div class="wrapper">
+                        <div class = "textBox">
+                            <h3>Black Forces Live in DC</h3>
+                            
+                            <p>On April 20th, 2024 Black Forces and DJ Woozie performed at Artomatic DC for  
+                            the very first time. We perfomed some classics and previewed new tracks 
+                            currently in progress to a brand new audience.</p>
+                            <br>
+                          
 
-    </body>    
-</html>
+                            <a href="pages/2.BlogPost.html" class="btn">Read More</a>
+                            
+                        </div> 
+
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            <div class="card">
+                <div class = "card-content">
+                <div class = "slider-wrapper">
+                
+                    
+                            <h3>Black Forces TCG</h3>
+                            <br>
+                            
+                                
+                                <div class ="slider">
+                                    <img id="slide-9" src="assets/1st Batch.JPG" alt="Box of colorful trading cards"></img>
+                                    <img id="slide-10" src="assets/BF TCG - Outlandish Jones.jpg" 
+                                        alt="Illustration of man with locs who's face is covered in blue flame holding a fireball"></img>
+                                    <img id="slide-11" src="assets/BF TCG - Jordan Bloom.jpg"
+                                        alt="Illustration of individual with a skull for a head wearing red flannel"></img>
+                                    <img id="slide-12" src="assets/BF TCG - Woozie.jpg" 
+                                        alt="Illustration of anthropromorphic wolf creature, snarling"></img>
+            
+                                </div>
+                                    
+                                    <div class="slider-nav">
+                                        <a href="#slide-9" aria-label="Box of colorful trading cards"></a>
+                                        <a href="#slide-10" aria-label="OutlandishJones card"></a>
+                                        <a href="#slide-11" aria-label="JordanBloom card"></a>
+                                        <a href="#slide-12" aria-label="Dj Woozie Card"></a>
+                                        
+                                    </div>
+                               
+                                
+                            </div>        
+                           
+                    
+
+                        <div class="wrapper">
+                            <div class="textBox">
+                            <b><h3>Watch out Pokemon, Yu-Gi-Oh and Magic!</h3></b>
+                            <p> Black Forces are hard at work on brand new, hand drawn collectible trading cards. 
+                            Each card represents members of Black Forces, as well as collaborators. Future batches 
+                            will include items representing coveted possesions of said artists as well as fun bonuses...</p>
+                            
+                                
+                            <a href ="pages/3.BlogPost2.html" class="btn">Read More</a>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                        
+                </div>
+                
+              
+
+
+            
+            
+
+            <div class="card"> 
+                
+                <div class = "card-content">
+
+                <div class = "slider-wrapper">
+                
+                    
+
+                    <h2>Studio Day</h2>
+                        <br>
+            
+                
+                            <div class ="slider">
+                                <img id="slide-17" src="assets/Studio Day4.JPG" alt="Outlandish rapping as Jordan monitors his levels"></img>
+                                <img id="slide-18" src="assets/Studio Day1.JPG" alt="Over the top view of OutlandishJones recording vocals"></img>
+                                <img id="slide-19" src="assets/Studio Day2.JPG" alt="A man uses the computer mouse to navigate his music software"></img>
+                                <img id="slide-20" src="assets/Studio Day3.JPG" alt="Both artists looking towards the computer as a mic shield resides in the foreground"></img>
+
+                            </div>
+
+                            <div class="slider-nav">
+                                    <a href="#slide-17 " aria-label="Outlandish in studio"></a>
+                                    <a href="#slide-18" aria-label="Over the top studio view"></a>
+                                    <a href="#slide-19" aria-label="IT Specialist"></a>
+                                    <a href="#slide-20" aria-label="Mic Shield"></a>
+            
+                                </div>
+                           
+                            </div>
+                       
+                        
+                            <div class="wrapper">
+                            <div class="textBox">
+                            
+                                <h3>New Music Coming Soon!</h3> 
+                                <br><p>Check out these behind the scenes photos of our latest studio session, new behind the scenes 
+                                content is coming soon!</p>
+                                <br> 
+                                            
+                         
+
+                        
+                            <a href="pages/4.BlogPost3.html" class="btn">Read More</h2></a>
+                        </div>
+                    </div>
+                   
+
+                </div>
+
+                
+
+                </div>
+            
+            </div> 
+            <div class = "wrapper2">
+                <div class = "sidebar box">    
+                        
+                        <div class = "sidebar-nav">
+        
+                            <h1>Profile</h1>
+        
+                            <ul>
+                                <li><u><a href="#"> About Me: </a></u></li>
+                                <h3>OutlandishJones </h3>
+                                <h3>(Francis Nyarku)</h3>
+                                <h5><small>Freelance Musician, Composer</small></h5>
+                                <p>OutlandishJones i.e. Francis, is a music producer, drummer, and song-writer based in Richmond VA</p>
+
+                                <li><a href="#"><i class="fas-fa-file"> Archives </i></a></li>
+                                <p><u><a href="#">October - 2024</a></u></p>
+                                <p><u><a href="#">September - 2024</a></u></p>
+                                <p><u><a href="#">August - 2024</a></u></p>
+                                <p><u><a href="#">July - 2024</a></u></p>
+                                <p><u><a href="#">June - 2024</a></u></p>
+                                <p><u><a href="#">May - 2024</a></u></p>
+                                <p><u><a href="#">April - 2024</a></u></p>
+                                <p><u><a href="#">March - 2024</a></u></p>
+                                <p><u><a href="#">February - 2024</a></u></p>
+                                
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <li><a href="#"><i class="fas-fa-file"> Social Media</i></a></li>
+                                
+                                
+                            </ul>
+                            
+                                
+                            
+                            <div class="social-media">
+                                
+                                <a href="#"><i class = "fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class = "fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class = "fa-brands fa-twitter"></i></a>
+                        </div>  
+             
+                    </div> <!--sidebar-nav-->
+                </div> <!--wrapper-->
+            </div>
+            
+            <div class="footer box">
+                <button>
+                        <a href="pages/1.Index.html" id ="five">"   " Back to Top </a>
+                </button>
+                
+                <button>
+                    <a href="pages/1.Index.html" id ="three">"   " Next Page </a>
+                </button>
+
+
+            </div>
+            
+
+        </main>
+
+    </body>

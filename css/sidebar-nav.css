@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: open sans;
+    
+}
+
+.wrapper2 .sidebar-nav {
+    position: fixed;
+    right: 0; 
+    top: 0;
+    width: 20vw;
+    height: 100vh;
+    background: #231f23;
+    
+}
+.wrapper2 .main-content{
+    width: 80vw;
+    margin-right: 20vw;
+    height: 20vh;
+    
+}
+.wrapper2 .sidebar-nav h2{
+    color: #fff;
+    text-align: center;
+    line-height: 90px;
+    border-bottom: 1px dotted white;
+    list-style: none;
+    
+
+}
+.wrapper2 .sidebar-nav ul li{
+    
+    list-style: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba (0,0,0,0,.1);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-justify: right;
+    text-align: right;
+
+        
+}
