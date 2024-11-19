@@ -1,6 +1,9 @@
-@import url('stylesheet.css');
 @import url('sidebar-nav.css');
 @import url('responsive.css');
+@import url('navbar.css');
+
+
+
 *{
     margin:0px;
     padding: 0px;
@@ -10,93 +13,292 @@
 }
 
 
-body{
+.home-page{
 
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(#020218, #817d99, #020218, #000028 75%, #df4768);
-    background-repeat: no-repeat;
-    background-size: 250vw;
-    color: #fffff8;
-    font-size: 18px;
-    margin-bottom: 10%;
     
-    @media(max-width:320px){
-        margin: 15%;
-        
-        }
+@media(min-width: 321px) and (max-width:445px){
     
-}
-
-.container{
-    width: 85%;
-    height:auto;
-    
-    justify-items: center;
-
-    @media(max-width:320px){
-        justify-content: left;
-        justify-items:left;
-        padding-left: 0%;
-        margin-right: 10%;
-        margin-left: 0%;
-        max-width: 150vw;
-        width: 75%;
-
- 
-        }
+    *margin: 0;
 
 
-}
-.content{
-    width: auto;
-    @media(max-width:320px){
-     justify-content: center;
-     justify-self: center;
-     justify-items: center;
-     max-width: 150%;
-     width: 35%;
-        }
-}
-.avatarBox{
-     @media(max-width:320px){
-        justify-content: left;
-        justify-items:left;
-        padding-left: 0%;
-        margin-right: 10%;
-        margin-left: 0%;
-        max-width: 135vw;
-        width: 75%;
+  .button{
+    padding-bottom: 0%;
+    margin-right: 15%;
+    margin-top: 170%;
+  }
 
- 
-        }
+.nav-bar{
+    max-width: 105%;
+    width: 82%;
 
-}
+    }
+
+
 .card-container
 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
-    margin-bottom: 1%;
+    margin-top: 10%;
+    padding-left: 2%;
+
+    margin-bottom: 10%;
 }
 
-.nav-bar{
+
+
+  }
+
+  @media(max-width:320px){
+    .container{
+        margin-right: 2.75%;
+        margin-left: 10%;
+        width:87vw;
+        max-width: 75%;
+        padding-left: 70%;
+        padding-right: 33%;
+        
+    }
+
+        .sidebar-nav {
+
+
+            align-self: center;
+            padding-top: 3%;
+            position:relative;
+            margin-left: 25%;
+            padding-left: 8%;
+            width:75%;
+            
+        }
+
+    
+        
+}
+
+
+
+
+  
+
+.container{
+    width: 95%;
+    height:auto;
+    
+    justify-items: center;
+    
+    @media(min-width: 321px) and (max-width:445px){
+        max-width: 200%;
+         width: 92vw;
+         margin-right: -15.25%;
+         
+            
+          }
+
+    @media(min-width:466px) and (max-width:599){
+        max-width: 150%;
+         width: 85%;
+         margin-right: 18.5%;
+         margin-left: 50%;
+
+            
+          }
+          
+        
+
+
+}
+
+.content{
+    width: auto;
+
+    @media(max-width:320px)
+    {
+     justify-content: center;
+     justify-self: center;
+     justify-items: center;
+     max-width: 150%;
+     width: 35%;
+    }
+    @media(min-width:321px) and (max-width:445px){
+    max-width: 5%;
+                
+          }
+    @media(min-width:466px) and (max-width:599){
+    padding: 5%      
+    }
+}
+
+
+.avatarBox{
+
+    justify-content:center;
+    justify-items:left;
+    padding-left: 0%;
+    margin-right: -3%;
+    margin-left: -20%;
+    max-width: 135vw;
+    width: 75%;
+
+
     @media(max-width:320px){
-        padding-right: 20%;
-        margin-left:30%;
-    width:80%;
-    max-width: 100%;}
+       justify-content:center;
+       justify-items:left;
+       padding-left: 0%;
+       margin-right: 31.50%;
+       margin-left: 0%;
+
+       
+       }
+
+       @media(min-width: 321px) and (max-width:445px){
+        
+        padding-right: 1%;
+        margin-right: 0%;
+        
+    }
+
+    
+    @media(min-width:600px) and (max-width:900px){    
+        padding-bottom: 5%;
+        margin-right: 0;
+    }
+
+    @media(min-width:1100px){
+        margin-right: 0%;
+    }
+
+}
+
+.card-container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+
+    margin-bottom: 10%;
+
+    @media(max-width: 320px){
+        
+        height: 92.24%;
+        margin-right: 1%;
+        margin-top: 85px;
+        margin-left: -36.5%;
+        margin-bottom: -1%;
+        width: 93%;
+    }
+    
+    
+    @media(min-width: 321px) and (max-width:445px){
+        
+        padding-right: 2%;
+        margin-top: 10%;       
+    }
+
+    
+    @media(min-width:600px) and (max-width:900px){
+        margin-top: 10%;    
+        padding-bottom: 1%;
+    }
+
+
+
+    
+}
+@media(max-width:320px){
+    .container{
+        margin-right: 2.75%;
+        margin-left: 10%;
+        width:87vw;
+        max-width: 75%;
+        padding-left: 70%;
+        padding-right: 33%;
+        
+    }
+
+        
+}
+
+
+.nav-bar{
+        padding-right: 0%;
+        padding-bottom: 10%;
+        margin-right: -1.2%;
+        width:103%;
+        max-width: 250vw;
+        margin-bottom: -25%;
+        
+        
+    @media(max-width:320px){
+        padding-right: 42%;
+        margin-right: 36.75%;
+        width:152vw;
+
+        max-width: 150%;
+        margin-bottom: -25%;
+    }
+
+    @media(min-width: 321px) and (max-width:445px){
+        width: 84.15%;
+        padding-right: 2%;
+        margin-right: 1%;
+           
+    }
+    @media(min-width: 446px) and (max-width: 515px){
+        margin-right: 0%;
+        width: 100%;
+    }
+    @media(min-width:1101px){
+        
+            width: 103%;
+            
+    }
+    
 }
 
 .nav-bar ul{
+    padding-left: 11%;
+    
     @media(max-width:320px){
-    margin-left: 1%;
-    max-width: 110%;
+    margin-left: 39%;
+    padding-left: 19%;
+    max-width: 220%;
+    width: 89.5vw;
+    
     }
+
+    @media(min-width: 321px) and (max-width:445px){
+        padding-left: 10%;
+        
+        object-fit:contain;
+        margin: 5px;
+        
+        margin-inline-start: 2%;
+        margin-inline-end: 19.254vw;
+        
+        padding-right: 1%;
+        max-width:220%;
+        width: 91.00vw;
+        justify-content: center;
+        justify-self: left;
+        margin-bottom: -35%;
+
+    }
+
+    @media(min-width:446px) and (max-width:599px){
+        margin-inline-start: 2%;
+        margin-inline-end: 55vw;
+        max-width: 275%;
+        width: 95%
+        
+     
+    }
+    @media(min-width:600px) and (max-width:900px){
+        margin-inline-start: 0%;
+        margin-inline-end: 30vw;
+    }
+
 }
 .card{
 
@@ -108,55 +310,274 @@ body{
     margin: 20px;
     
     @media(max-width:320px){
-        margin-right: 5%;
+        margin-right: -12%;
+        height: 33%;
+        margin-bottom: 2%;
         }
-}
-.wrapper2 .sidebar-nav {
 
-    /*padding-left: 5%;*/
-    /*margin-right: -20%;*/
-    /*margin-left: 15%;*/
-    width: 25vw;
-    height: 7vh;
-    margin-top: 40%;
-    margin-right: -7%;
-    position:relative;
-    align-items: right;
-    @media(max-width: 320px){
-        align-self: center;
-        margin-right: 150%;
-        position:relative;
-        margin-left: 55%;
-    }
+
+        @media(min-width:321px) and (max-width:476px){
     
+            margin-top: 30%;
+            padding-top: 1%;
+        
+            padding-bottom: 70%;
+            margin-bottom: -75%;
+            height: 27%;
+        
+          }
+          @media(min-width:477px) and (max-width:900px){
+            
+            margin-top: 19%;
+            padding-top: 0%;
+            margin-bottom: -6%;
+            
+          }
 }
+
+
+
+
+/*sidebar nav responsiveness*/
 .card-img{
-     width: 100%;
-     height: auto;
+    width: 100%;
+    height: auto;
 
 }
 .card-content {
-    padding: 12px; 
+   padding: 12px; 
 }
 
 .card-content h3 {
-    font-size: 28px;
-    margin-bottom: 8px;  
+   font-size: 28px;
+   margin-bottom: 8px;  
 }
 
 .card-content p {
-    color: #666;
-    font-size: 15px;
-    line-height: 1.3;
+   color: #666;
+   font-size: 15px;
+   line-height: 1.3;
 }
 
 .card-content .btn{
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #333;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 15px;
-    color: #fff;
+   display: inline-block;
+   padding: 8px 16px;
+   background-color: #333;
+   text-decoration: none;
+   border-radius: 4px;
+   margin-top: 5%;
+   color: #fff;
+}
+
+.wrapper2{
+       
+    @media(min-width:321px) and (max-width:445px){
+        
+        margin-top: 25%;
+        padding-top: 0%;
+        margin-bottom: -2%;
+    
+      }
+      
+      @media(min-width:446px) and (max-width:900px){
+        
+        margin-top: 0%;
+        padding-right: 0%;
+        margin-right: 0%;
+        margin-left: 0%;
+        
+      }
+    
+    }
+    
+.wrapper2 .sidebar-nav {
+
+    width: 45%;
+    margin-right: -40%;
+    height: 84vh;
+
+    
+    @media(max-width: 320px){
+        align-self: center;
+        padding-top: 3%;
+        position:relative;
+        margin-left: 35%;
+        margin-right: -1%;
+        padding-left: 8%;
+
+        min-height: 103vh;
+        width: 141%;
+        
+    }
+    @media(min-width: 321px) and (max-width: 445px){ 
+        
+        padding-top: 3%;
+        position: relative;
+        margin-left: 12%;
+        margin-right: 5%;
+        padding-left: 4%;
+        margin-bottom: 10%;
+
+        min-height: 93vh;
+        width: 60%;
+        
+
+    }
+    @media(min-width: 446px) and (max-width:599px){
+            
+        margin-left: 25%;
+        margin-right: -1%;
+        padding-left: 1%;
+        
+        height: 86vh;
+        max-height: 175vh;
+        position: relative;
+        width: 75%;
+        
+        
+}
+    @media(min-width: 550px) and (max-width: 600px){
+        position: relative;
+        width: 25%;
+        margin-top: 41%;
+        margin-right: 1%;
+        width: 55%;
+        
+    }
+    @media(min-width:601px) and (max-width:1099px){
+        width: 25%;
+        margin-top: 41%;
+        margin-right: 1%;
+
+        
+    }
+    @media(min-width:1100px)and (max-width:1400px){
+        width: 25%;
+        margin-right: -4%;
+        margin-top: 36%;
+        height: 5%;
+        
+        
+    }
+    @media(min-width: 1401px) and (max-width:1599px){
+        width: 25%;
+        margin-right: -5%;
+        margin-top: 35%;
+        height: 5%;
+    }
+    @media(min-width:1600px){
+        width: 20%;
+        margin-right: 4%;
+        margin-top: 31%;
+        height: 5%;
+    }
+
+}
+.footer{
+    @media(max-width: 320px){
+    margin-top: -20%;
+
+    }
+} 
+    button{
+        
+            flex:auto;
+            flex-direction: rows;
+            border-radius: 5px;
+            align-self: left;
+            height: 4vh;
+            width: 30%;
+            max-height: 65vh;
+            max-width: 75%;
+            min-height: none;
+            min-width: 25%;
+            justify-content: left;
+            align-content: left;
+            text-align: center;
+            border: 2.5px solid #918F9C;
+            padding: 0%;
+            margin: 1%;
+        
+        @media(max-width: 320px) {
+        
+                flex:auto;
+                flex-direction: rows;
+                border-radius: 5px;
+                align-self: left;
+                height: 120%;
+                width: 60%;
+                max-height: 45vh;
+                
+                min-height: none;
+                min-width: 25%;
+                justify-content: left;
+                align-content: left;
+                text-align: center;
+            
+                border: 2.5px solid #918F9C;
+                padding: 1%;
+                margin: 2.5%;
+                margin-right: 25%;
+            
+        }
+        
+      
+    
+    }
+    
+    button {
+        @media(min-width: 321px) and (max-width:400px)
+        {
+            width: 35%;
+            height: 4vh;
+            max-width: 235vw;
+            max-height: 175vh;
+        }
+    }
+    .button{
+        @media(min-width: 446px) and (max-width:599px){
+            
+                width: 88%;
+                height: 55%;
+                max-width: 235vw;
+                max-height: 175vh;
+        }
+    }
+
+ 
+
+} /*end of Home Page specific code*/
+
+
+
+
+
+
+.wrapper2{
+    @media(max-width:320px){
+    padding-top: 10%;
+    padding-right: 68%;
+    width:95%;
+    height: 80%;
+    overflow: hidden;
+    }
+}
+.wrapper2 ul {
+    @media(max-width:320px){
+        font-size: 70%;
+        
+ }
+}
+.wrapper2 a {
+    @media(max-width:320px){
+        font-size: 100%;
+        
+ }
+}
+.wrapper2 .sidebar-nav p{
+    @media(max-width:320px){
+        font-size: 90%;
+ 
+}   
 }
 

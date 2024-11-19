@@ -1,25 +1,38 @@
 @import url('sidebar-nav.css');
 @import url('home-page.css');
+@import url('core');
+/*@import url('blog-pages.css');*/
+
 @media(max-width:320px)
 {
     
-
+    p{
+        font-size: 80%;
+    }   
+    figcaption{
+        padding-top: 2%;
+        font-size: 75%;
+    }
     .card{
         justify-self: center;
         justify-content: center;
         justify-items: center;
-        
+        margin-top: -15%;
         max-width: 58%;
     }
 
-    
+    .avatarBox{
+        width: 100%;
+        padding-right: 8%;
+        margin-left: -22%;
+    }
     .nav-bar li{
         float : center;
         text-align: center;
         margin: 1%;
         height: 5vh;
         width: 45vw;
-        padding-left: 10%;
+        padding-left: 15.0%;
         
      }
      .nav-bar {
@@ -28,24 +41,58 @@
         text-align: center;
         grid-area: sd sd sd;
         height: auto;
-        width: 100%;
+        width: 82%;
+        margin-left: 10%;
+        padding-left: 1%;
+        padding-right: 1%;
         
 
         
     }
     
+    .nav-bar ul{
+    
+        width: 165%;
+        margin-left: -20%;
+        max-width: 130%;
+        padding-bottom: 4%;
+    
+        
+    }
+    .content{
+        margin-top: 5%;
+        width: 105%;
+        padding-left: 2%;
+        object-fit: contain;
+   
+    }
+    .container{
+
+    object-fit: contain;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 2%;
+    
+    }
+   
 
     body{
        
-        display: flex;
         justify-content: center;
         align-items: center;
         object-fit: contain;
         min-height: 10vh;
-        
+        text-align: left;
         color: #fffff8;
         font-size: 18px;
-        width: 125%;
+        width: 133%;
+        margin: 1%;
+        background-image: 15%;
+        background-size: 200vw;
         
 
         
@@ -57,9 +104,11 @@
         /*margin-right: -20%;*/
         /*margin-left: 15%;*/
         margin: 10%;
-        width: 75vw;
-        height: 75vh;
-        position: relative;
+        width: 80vw;
+        height: 90vh;
+        max-width: 85vw;
+        padding: 18%;
+        position:relative;
         align-items: right;
 
     }
@@ -70,47 +119,25 @@
         border-radius: 5px;
         align-self: left;
         height: 91%;
-        width: 25%;
-        max-height: 5vh;
-        max-width: 30%;
+        width: 60%;
+        max-height: 7vh;
+        
         min-height: none;
-        min-width: 25%;
+        min-width: 50%;
         justify-content: left;
         align-content: left;
         text-align: center;
     
         border: 2.5px solid #918F9C;
-        padding: 0%;
+        padding: 2%;
         margin: 2.5%;
+        
     }
     ul{
         font-size: 13.5px;
         
     }
-    .content{
-        margin-top: 5%;
-        
 
-        object-fit: contain;
-   
-    }
-    .container{
-
-    object-fit: contain;
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-    margin-bottom: 15%;
-    border: 5px solid aquamarine;
-    justify-self: center;
-    padding: 0%;
-    margin: -5%;
-    padding-right: 0%;
-    padding-bottom: 10%;
-    max-width: fit-content;
-    
-    }
-   
     .button-three{
         font-size: 65px;
         margin: 4%;
@@ -135,8 +162,9 @@
         
     }
     .footer{
-        padding: 15%;
+        padding: 5%;
         align-items: center;
+        margin-top: -35%;
     }
     .photoBox
     {
@@ -149,6 +177,11 @@
 
 }
 @media(min-width: 321px) and (max-width:445px){
+    
+    .avatarBox{
+        width: 85%;
+        padding-right: 8%;
+    }
     h2{
         font-size: 21.5px;
         padding-bottom: 5%;      
@@ -158,9 +191,9 @@
         justify-self: center;
         justify-content: center;
         justify-items: center;
+        margin-top: -15%;
         
-        
-        max-width: 70%;
+        max-width: 75%;
     }
     .container{
         
@@ -181,21 +214,28 @@
     body{
      width: 100vw;
      margin-right: 1%;
+     
     
     }
+    button{
+
+        border: 2.5px solid #918F9C;
+        padding: 2%;
+        margin-top: 2.5%;
+        
+    }
     .wrapper2 .sidebar-nav {
-        position:absolute;
-        object-position: 1%;
-        right: 0; 
-        top: 0;
-        width: 35vw;
-        height: 77vh;
-        margin-top: 60%;
-        margin-right: -16%;
-        background: #9696915d;
-        text-align: left;
-        padding-left: 1.5%;
-        border-radius: 5px;
+        padding-top: 3%;
+        position:relative;
+        margin-left: 12%;
+        margin-right: 0%;
+        padding-left: 4%;
+        margin-bottom: 10%;
+
+        min-height: 93vh;
+        width: 75%;
+        max-width: 250%;
+        
     }
     .photoBox{
         margin: 5%;
@@ -226,11 +266,16 @@
         padding-right: 0%;
         width:75vw        
     }
+
+    
     
 }
 @media(min-width: 446px) and (max-width:599px){
     
-
+.avatarBox{
+    width: 85%;
+    padding-right: 8%;
+}
     h2{
         font-size: 21.5px;
         padding-bottom: 5%;      
@@ -239,7 +284,7 @@
         padding: 0%;
         height: 100%;
         margin: 0%;
-        width: 75vw; 
+        width: 70vw; 
         max-width: 95%;
         margin-bottom: 5%;
         border:2px solid green ;
@@ -247,23 +292,30 @@
         
         
     }
+    button{
+        padding-top: 0%;
+        padding-bottom: 0%;
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
     img{
         max-width: fit-content;
     }
     body{
-     width: 100vw;
+     width: 101vw;
      margin-right: 1%;
     
     }
     .wrapper2 .sidebar-nav {
-        position:absolute;
-        object-position: 1%;
+        position:relative;
+        object-position: 0%;
         right: 0; 
         top: 0;
-        width: 35vw;
-        height: 77vh;
-        margin-top: 60%;
-        margin-right: -16%;
+        width: 65vw;
+        max-width: min-content;
+        height: 90vh;
+        margin-top: 30%;
+        margin-right: 55%;
         background: #9696915d;
         text-align: left;
         padding-left: 1.5%;
@@ -280,14 +332,14 @@
         justify-items: center;
     }
     .content {
-        width: 60vw;
+        width: 55vw;
         justify-self: center;
         
     }
 
     .nav-bar li{
-        padding-right: 10%;
-        padding-left: 10%;
+        padding-inline-start: 6%;
+        padding-inline-end: 7%;
         font-size: 10px;
         
     }
@@ -295,15 +347,16 @@
         margin: 0%;
         padding: auto ;
         padding-right: 0%;
-        width:75vw        
+        width:70vw        
     }
     
     
 }
 @media(min-width:600px) and (max-width:900px){
     .avatarBox{
-        max-width: 100%;
-        width: 75%;
+        max-width: 85%;
+        margin-left:-5%;
+        
     }
     body{
 
@@ -320,31 +373,42 @@
     .wrapper2 .sidebar-nav {
 
         /*padding-left: 5%;*/
-        /*margin-right: -20%;*/
+        margin-right: 1%;
         /*margin-left: 15%;*/
         margin-top: 53%;
-        height: 75vh;
+        height: 80vh;
+        
         position:absolute;
         align-items: right;
 
     }
+    .wrapper2 ul {
+       
+            font-size: 70%;
+  
+    }
+
 
     .nav-bar {
-        
+        width: 102%;
         padding-right: auto;
         padding-left: auto;
+        margin-left: -1%;
     }
     .nav-bar li{
 
-        
+        margin-inline-start: 0%;
+        margin-inline-end: 30vw;
+    
         margin: 0.5%;
-        margin-right: 2.0%;
-        margin-left: 1.45%;
+        margin-right: 5.2%;
+        margin-left: 1.05%;
 
         float: left;
-        padding-right: 1.50%;
+        padding-right: 12.50%;
         padding-left: 1.5%;
-
+     
+            
     
     }
     .container{
@@ -353,6 +417,7 @@
         width: auto;
         height: auto;
         margin: 2.5%;
+        margin-right:10% ;
         justify-self: center;
         border-radius: auto;
         border-style:groove;
@@ -370,11 +435,7 @@
      
         
     }
-    slider-wrapper{
-        content: fill;
-        max-width: 20%;
-
-    }
+    
     img{
         
         justify-items: center;
@@ -395,10 +456,10 @@
         /*padding-left: 5%;*/
         /*margin-right: -20%;*/
         /*margin-left: 15%;*/
-        width: 25vw;
-        height: 75vh;
+        width: 20vw;
+        height: 85vh;
         margin-top: 40%;
-        margin-right: -5%;
+        margin-right: -1%;
         position:absolute;
         align-items: right;
         
@@ -412,6 +473,12 @@
         justify-content: center;
         justify-items: center;
         align-items: center;
+    }
+    button{
+        padding-top: 0%;
+        padding-bottom: 0%;
+        margin-top: 5%;
+        margin-bottom: 1%;
     }
 
     .container{
@@ -431,80 +498,24 @@
 
         float: center;
         margin: 1%;
-        padding-left: 7.75%;
+        padding-left: 5.0%;
 
     
     }
-    .nav-bar{
-        width: 100%;
-    }
-}
-
-
-
-@media(min-width:1101px){
-    justify-content center
-    justify-items center
-    align-items center
-    
-    .header{
-        padding-top: 95vh;
-        margin-top: 15%;
-
-
-    }
-    .content{
-        width: 85%;
-        max-height: content;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        margin: 10%;
-    }
-   
-    .wrapper2 .sidebar-nav {
-        /*padding-left: 5%;*/
-        /*margin-right: -20%;*/
-        /*margin-left: 15%;*/
-        margin-top: 42%      
-    }
-    .body{
+    .nav-bar {
+        width: 102.80%;
+        max-width: 250%;
+        margin-left: -1.5%;
+        padding-right: 0%;
+        }
+    .nav-bar ul {
+        padding-inline-start: 7%;
+        padding-left: 13%;
         
-        display: flex;
+        padding-inline-end: 0%;
         
-        /*margin: 25%;*/
-        flex-direction: column;
-        
-       
     }
-    .container{
-        width: 85%;
-        height: auto;
-        max-width: 74vw;
-        margin: 2%;
-    }
-
-    .img{
-        margin-top: auto;
-        max-width: 500px;
-    }
-    .avatarBox{
-        max-width: 100%;
-        width: 75%;
-    }
-    .nav-bar li{    
-    margin-left: .75%;
-    margin-right: 2.40%;
-    float: left;
-    padding-right: 4%;
-    padding-left: 4%;
-
 }
 
-.nav-bar{
-    width: 62vw;
-    
-}
 
-}
+

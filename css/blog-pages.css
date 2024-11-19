@@ -1,5 +1,7 @@
 @import url('sidebar-nav.css');
 @import url('stylesheet.css');
+@import url('responsive.css');
+
 
 .sidebar{
     grid-area: sd;
@@ -11,7 +13,7 @@
 }
 .nav-bar{
     width: 102%;
-    @media(min-width: 321px) and (max-width:445px){
+    @media(min-width: 320px) {
         
     }
 }
@@ -34,6 +36,7 @@ body{
     margin-bottom: 100%;
 }
 .photoBox{
+    
     width: 75%;
     justify-content: center;
     justify-self: center;
@@ -42,12 +45,18 @@ body{
     
 }
 .photoBox{
-
+min-width: 50%;
     img{
         max-width: 100%;
     }
 }
 
+blockquote p{
+    margin-top: 10%;
+    @media (min-width: 1600){
+    padding-top: 10%;
+}
+}
 .container2{
     
     display: grid;

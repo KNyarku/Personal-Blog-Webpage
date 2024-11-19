@@ -3,6 +3,7 @@
 @import url('core.css');
 @import url('blog-pages.css');
 @import url('responsive.css');
+/*@import url('home-page.css');
 
 /*@import url('css/navbar.css');
 @import url('css/Slider.css');
@@ -19,8 +20,16 @@
     box-sizing: border-box;
     font-family: "Space Grotesk", sans-serif;
     
-    
+
 }
+textarea{
+    max-width: 35vw;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin-left: 22%;
+}
+
 .space-grotesk{
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
@@ -34,16 +43,24 @@
     grid-area: hd;
     text-align: center;
     color: #403e47;
-    
-
+    padding-bottom: -8%;
+    p{
+        font-size: 11px;
+        text-align: center;
+        padding-left: 6%;
+        padding-bottom: 0%;
+        margin-bottom: -1%;
+    }
+  
 }
 
 .footer {
 
     flex:auto;
     flex-direction: rows;
-    border: solid 2px ;
+
     padding-top: 1%;
+    padding-bottom: 2%;
     width: 100%;
     align-items: center;
     align-content: center;
@@ -54,8 +71,37 @@
 
 }
 
-
+.sidebar{
+    grid-area:sd;
     
+    flex:auto;
+    flex-direction: column;
+    border: solid 2px ;
+    padding-top: 1%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    
+}
+    
+.content {
+    padding-top: 5%;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    border: 2.5px solid #918F9C;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    grid-template-areas:
+    "hd"
+    "sd "
+    "main"
+    "ft";
+    text-align: center;
+}
 
 
 .box{
@@ -67,20 +113,7 @@
     
 }
 
-body{
 
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(  #020218, #817d99, #020218, #000028 75%, #df4768);
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    color: #fffff8;
-    font-size: 18px;
-    
-}
 .wrapper{
     margin: 1vh auto;
     width: 100% ;
@@ -98,26 +131,13 @@ body{
     text-align: center;    
     border: 2px transparent rgb(58,44, 44);
     
+    
 }
 
 
 
-.content {
-    padding-top: 5%;
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    border: 2.5px solid #918F9C;
-    margin-top: 5%;
-    margin-bottom: 1%;
-    border-radius: 10px;
-    grid-template-areas:
-    "hd"
-    "sd "
-    "main"
-    "ft";
-    text-align: center;
-}
+
+
 
 section{
     
@@ -161,6 +181,7 @@ section{
 .container2{
     /*Adding padding around slider*/
     padding: 2rem;
+    
 }
 
 /*Slider properties*/
@@ -190,7 +211,7 @@ section{
     }
 
 
-.photoBox{
+.photoBox {
     
     /*width: 75px;*/
     /*height: 250px;*/    
@@ -199,8 +220,25 @@ section{
     content: contain;
     border: 1px hidden #918F9C;
     justify-content: center;
-
+    margin-top: -8%;
     
+    
+}
+#six{
+    margin-top: 1%;
+    margin-bottom: -6%;
+
+}
+#seven{
+    margin-top: 7%;
+
+}
+#eight{
+    margin-top: 2%;
+
+}
+blockquote .content{
+    margin-bottom: -6%;
 }
 #one{    
     
@@ -228,7 +266,7 @@ section{
 #three{
    flex: auto;
    flex-direction: row;
-    background-image: url('/Personal Blog Project/assets/BF\ TCG\ -\ Outlandish\ Jones.jpg');
+    background-image: url('../assets/BF\ TCG\ -\ Outlandish\ Jones.jpg');
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -236,7 +274,7 @@ section{
 #four{
     flex: auto;
     flex-direction: row;
-    background-image: url('/Personal Blog Project/assets/BF\ TCG\ -\ Jordan\ Bloom.jpg');
+    background-image: url('../assets/BF\ TCG\ -\ Jordan\ Bloom.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     grid-template-areas:
@@ -249,7 +287,7 @@ section{
 #five{
     flex: auto;
     flex-direction: row;
-    background-image: url('/Personal Blog Project/assets/BF\ TCG\ -\ Woozie.jpg');
+    background-image: url('../assets/BF\ TCG\ -\ Woozie.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     grid-template-areas:
